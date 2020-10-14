@@ -65,6 +65,26 @@ export default {
 </script>
 
 <style lang="scss" >
-.swiper-img{width: 100%;
-}
+.swiper-container{
+    .swiper-pagination{
+      .swiper-pagination-bullet{
+         width: 3px;
+         height: 10px;
+         background: #fff;
+         border-radius: 20%;
+      }
+
+      .swiper-pagination-bullet.swiper-pagination-bullet-active{
+         width: 3px;
+         height: 40px;
+         background: #fff;
+      }
+
+
+    }
+   .swiper-img{width: 100%;}
+  }
+
+
+
 </style>
