@@ -4,6 +4,13 @@
     <swiper :options="swiperOption" ref="mySwiper">
 	    <swiper-slide v-for="item in banners" :key="item.id">
 	    	<img class="swiper-img" :src="item.imgurl">
+        <div class="swiper-content" :class="item.clssswipercontent">
+          <span class="swiper-content-text">
+             <h3 class="swiper-content-text-h3">{{item.title}}</h3>
+             <p class="swiper-content-text-p">{{item.text}}</p>
+             <a class="swiper-content-text-a" href="#">了解更多</a>
+          </span>
+        </div>
 	    </swiper-slide>
 	    <div class="swiper-pagination" slot="pagination"></div>
 
@@ -32,22 +39,39 @@ export default {
       },
       banners:[{
       		id:'001',
-      		imgurl:'./static/img/banner01.jpg'
+      		imgurl:'./static/img/banner01.jpg',
+          clssswipercontent:'content1',
+          title:'安全稳定企业服务',
+          text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'002',
-      		imgurl:'./static/img/banner02.jpg'
+      		imgurl:'./static/img/banner02.jpg',
+          clssswipercontent:'content2',
+          title:'视频防攻',
+          text:'安全保障安全保障安全保障，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'003',
-      		imgurl:'./static/img/banner03.jpg'
+      		imgurl:'./static/img/banner03.jpg',
+          clssswipercontent:'content3',
+          title:'图像防攻',
+          text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'004',
-      		imgurl:'./static/img/banner04.jpg'
+      		imgurl:'./static/img/banner04.jpg',
+          clssswipercontent:'content4',
+          title:'文本防攻',
+          text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'005',
-      		imgurl:'./static/img/banner05.jpg'
+      		imgurl:'./static/img/banner05.jpg',
+          clssswipercontent:'content5',
+          title:'语音防攻',
+          text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'006',
-      		imgurl:'./static/img/banner06.jpg'
+      		imgurl:'./static/img/banner06.jpg',
+          title:'教程',
+          text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	}]
     };
   },
@@ -73,16 +97,38 @@ export default {
          background: #fff;
          border-radius: 20%;
       }
-
       .swiper-pagination-bullet.swiper-pagination-bullet-active{
          width: 3px;
          height: 40px;
          background: #fff;
       }
-
-
     }
    .swiper-img{width: 100%;}
+   .swiper-content{
+      position: absolute;
+      left: 20%;
+      top: 50%;
+      transform: translateY(-50%);
+      .swiper-content-text{
+        width: 300px;
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        .swiper-content-text-h3{font-size: 30px;font-weight: bold;}
+        .swiper-content-text-p{padding: 20px 0px;line-height: 20px;}
+        .swiper-content-text-a{background: #fff;width: 40px;padding: 10px 15px;border-radius: 10px;}
+      }
+   }
+   .swiper-content.content2,.swiper-content.content3,.swiper-content.content4,.swiper-content.content5{
+      left: 50%;
+      top: auto;
+      bottom: 12%;
+      transform: translateX(-50%);
+      .swiper-content-text{
+        text-align: center;
+      }
+
+   }
   }
 
 

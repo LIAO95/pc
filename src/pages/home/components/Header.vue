@@ -62,6 +62,7 @@
   }
 </script>
 <style lang="scss" scoped>
+
 .header-wrapper{
   position: fixed;
   z-index: 11;
@@ -95,6 +96,7 @@
         background: #ffffff;
         transition: all .6s ease;
     }
+
     .el-menu.el-menu--horizontal>>>.el-submenu .el-submenu__title:hover{
        background: none;
 
@@ -106,9 +108,7 @@
           background:none;
           color: red;
          } 
-
-
-
   }
 }
+
 </style>
