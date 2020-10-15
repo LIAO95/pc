@@ -8,10 +8,11 @@
        @select="handleSelect" 
        text-color="#fff" 
        active-text-color="#05f5a9"
+       router
        >
-        <el-menu-item index="1">首页</el-menu-item>
+        <el-menu-item index="1"><router-link to="/">首页</router-link></el-menu-item>
         <el-submenu index="2">
-          <template slot="title">图像防攻</template>
+          <template slot="title"><router-link to="/tupian">图像防攻</router-link></template>
           <el-menu-item index="2-1">车牌识别</el-menu-item>
           <el-menu-item index="2-2">目标检测</el-menu-item>
           <el-menu-item index="2-3">人脸识别</el-menu-item>
