@@ -1,0 +1,32 @@
+//截字
+//SCSS 的”%” 与 “.” 功能类似，但是不会输出代码
+// %ellipsis-basic {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+
+@mixin ellipsis-basic {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// //文字超出后以...显示 支持多行
+// @mixin fn-ellpisis($line) {
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: $line;
+//   overflow: hidden;
+// }
+
+@mixin show-width {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+$p-t-2:20px;
+$p-b-2:20px;
+$h3_size:30px;
+
+$bgColor: #000;
