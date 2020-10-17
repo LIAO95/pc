@@ -71,16 +71,10 @@
     .el-menu-all{
       margin: 0 auto;
       background: none;
-
        .el-submenu >>> .el-submenu__title{
-        padding:0 45px;
-        
-
+        padding:0 45px;        
        }
-
-    }
-
-    
+    }    
     .el-menu.el-menu--horizontal{border:none;}
     .el-menu.el-menu--horizontal>>>.el-submenu{position: relative;}
     .el-menu.el-menu--horizontal>>>.el-submenu .el-submenu__title:after {
@@ -93,10 +87,8 @@
         background: #ffffff;
         transition: all .6s ease;
     }
-
     .el-menu.el-menu--horizontal>>>.el-submenu .el-submenu__title:hover{
        background: none;
-
     }
      .el-menu.el-menu--horizontal>>>.el-submenu:hover .el-submenu__title:after{
        width: 100%;
