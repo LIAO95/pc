@@ -2,20 +2,21 @@
 	<div>
 	  <home-header></home-header>
 	  <tu-banner></tu-banner>
-	  <content-list></content-list>
+	  <img-upload></img-upload>
 	</div>
 </template>
 
 <script>
 import HomeHeader from './../home/components/Header.vue'
-import TuBanner from './components/tubanner.vue'
-import ContentList from './components/content.vue'
+import TuBanner from './../tupian/components/tubanner.vue'
+import ImgUpload from './components/v_change.vue'
 export default{
-	name:'Tupian',
+	name:'show',
 	components:{
 		HomeHeader,
 		TuBanner,
-		ContentList
+		ImgUpload
+
 	}
 }
 </script>

@@ -33,6 +33,24 @@
       </div>
     </div>
 
+
+    <div class="content-list-item">
+      <div class="item-cont">
+        <router-link to="/video_c">
+          <img class="item-img" src="/static/img/cimg_03.jpg"">
+          <p class="item-title">视频1</p>
+         </router-link>
+      </div>
+    </div>
+    <div class="content-list-item">
+      <div class="item-cont">
+        <router-link to="/video_d">
+          <img class="item-img" src="/static/img/cimg_04.jpg"">
+          <p class="item-title">视频2</p>
+        </router-link>
+      </div>
+    </div>
+
  </div>
 </template>
 

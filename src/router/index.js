@@ -7,6 +7,10 @@ import show from '@/pages/show/show.vue'
 import target from '@/pages/show/target.vue'
 import number from '@/pages/show/number.vue'
 import face from '@/pages/show/face.vue'
+import video_c from '@/pages/video/video_c.vue'
+import video_d from '@/pages/video/video_d.vue'
+
+
 
 Vue.use(Router)
 
@@ -39,5 +43,13 @@ export default new Router({
 	path: '/face',
 	name: 'face',
 	component: face
+  },{
+	path: '/video_c',
+	name: 'video_c',
+	component: video_c
+  },{
+	path: '/video_d',
+	name: 'video_d',
+	component: video_d
   }]
 })

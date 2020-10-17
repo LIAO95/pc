@@ -8,6 +8,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/reset.css'
+import './assets/css/sass/page.scss'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)

@@ -131,7 +131,7 @@ export default{
   padding-top: 60px;
   .show_list{
       margin-bottom: 60px;
-      .show_title_h3{font-size: 22px;margin-bottom: 30px;}
+      .show_title_h3{font-size: $h3_size;margin-bottom: 30px;}
       .ori-img{
         .ori-results{
           position: relative;
