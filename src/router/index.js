@@ -9,6 +9,8 @@ import number from '@/pages/show/number.vue'
 import face from '@/pages/show/face.vue'
 import video_c from '@/pages/video/video_c.vue'
 import video_d from '@/pages/video/video_d.vue'
+import text_e from '@/pages/text/text_e.vue'
+import text_r from '@/pages/text/text_r.vue'
 
 
 
@@ -51,5 +53,13 @@ export default new Router({
 	path: '/video_d',
 	name: 'video_d',
 	component: video_d
+  },{
+	path: '/text_e',
+	name: 'text_e',
+	component: text_e
+  },{
+	path: '/text_r',
+	name: 'text_r',
+	component: text_r
   }]
 })
