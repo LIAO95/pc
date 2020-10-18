@@ -9,6 +9,7 @@ import animated from 'animate.css'
 import 'swiper/swiper-bundle.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/reset.css'
+import './assets/css/main.css'
 import './assets/css/sass/page.scss'
 
 Vue.config.productionTip = false

@@ -41,7 +41,7 @@ export default{
         font-size: 14px;
         .tubanner-content-text-h3{font-size: 30px;font-weight: bold;}
         .tubanner-content-text-p{padding: 20px 0px;line-height: 20px;}
-        .tubanner-content-text-a{background: #fff;width: 40px;margin-right: 38px;padding: 10px 15px;border-radius: 10px;}
+        .tubanner-content-text-a{background: #65bbed;width: 40px;margin-right: 38px;padding: 10px 15px;border-radius: 10px;}
       }
    }
 

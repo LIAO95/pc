@@ -97,6 +97,7 @@ export default{
       width: 260px;
       padding: 20px;
       margin: 0 auto;
+      a{color:#666;}
       .item-title{margin-top: 15px;}
     }
 
