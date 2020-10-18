@@ -2,20 +2,20 @@
 	<div>
 	  <home-header></home-header>
 	  <tu-banner></tu-banner>
-	  <text-list></text-list>
+	  <about-text></about-text>
 	</div>
 </template>
 
 <script>
 import HomeHeader from './../home/components/Header.vue'
 import TuBanner from './../tupian/components/tubanner.vue'
-import TextList from './components/text.vue'
+import AboutText from './components/about_text.vue'
 export default{
-	name:'TextList',
+	name:'show',
 	components:{
 		HomeHeader,
 		TuBanner,
-		TextList
+		AboutText
 
 	}
 }

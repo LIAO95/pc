@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home.vue'
 import Tupian from '@/pages/tupian/Tu.vue'
-import test from '@/pages/aboutus/About.vue'
 import show from '@/pages/show/show.vue'
 import target from '@/pages/show/target.vue'
 import number from '@/pages/show/number.vue'
@@ -11,6 +10,7 @@ import video_c from '@/pages/video/video_c.vue'
 import video_d from '@/pages/video/video_d.vue'
 import text_e from '@/pages/text/text_e.vue'
 import text_r from '@/pages/text/text_r.vue'
+import about_us from '@/pages/about/about_us.vue'
 
 
 
@@ -25,10 +25,6 @@ export default new Router({
 	path: '/tupian',
 	name: 'Tupian',
 	component: Tupian
-  },{
-	path: '/aboutus',
-	name: 'aboutus',
-	component: test
   },{
 	path: '/show',
 	name: 'show',
@@ -61,5 +57,9 @@ export default new Router({
 	path: '/text_r',
 	name: 'text_r',
 	component: text_r
+  },{
+	path: '/about_us',
+	name: 'about_us',
+	component: about_us
   }]
 })

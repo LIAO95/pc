@@ -1,5 +1,32 @@
 
 @import "./mixin.scss";
+.about_content{
+  @include show-width;
+  margin-top:50px;
+  .img_about{
+     img{width: 100%;}
+  }
+  .about_span{
+    padding:20px 0px;
+    h3{font-size: $h3_size;}
+    span{
+      display: inline-block;
+      p{line-height: 24px;text-indent: 32px;margin-top: 20px;}
+    }
+  }
+  .staff{
+    margin-top: 40px;margin-bottom: 60px;
+    h3{margin:40px auto;}
+    .el-card{
+      margin-bottom: 40px;
+      img{width: 100%;display: block;}
+      h4{margin-bottom: 10px;}
+      p{@include fn-ellpisis; line-height: 24px;}
+    }
+  }
+}
+
+// about-end
 
 .video-content{
   @include show-width;

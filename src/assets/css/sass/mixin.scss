@@ -5,7 +5,7 @@
 //   text-overflow: ellipsis;
 //   white-space: nowrap;
 // }
-
+// 单行超出以…显示
 @mixin ellipsis-basic {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -19,6 +19,15 @@
 //   -webkit-line-clamp: $line;
 //   overflow: hidden;
 // }
+
+// //文字超出后以...显示 支持多行
+@mixin fn-ellpisis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
 
 @mixin show-width {
   max-width: 1140px;
