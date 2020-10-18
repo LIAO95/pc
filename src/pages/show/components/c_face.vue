@@ -24,12 +24,12 @@
         <el-row :gutter="20" class="ori-row">
           <el-col :span="12">
             <div class="grid-content">
-              <img src="/static/img/cp_03.jpg">
+              <img src="/static/img/pj_06.jpg">
             </div>
           </el-col>
           <el-col :span="12">
             <div class="ori-results">
-              <font>2</font>
+              <img src="/static/img/pj_06.jpg">
               <div class="numb-results"><p>识别结果｜弗拉基米尔·弗拉基米罗维奇·普京</p></div>
             </div>
          </el-col>
@@ -56,12 +56,12 @@
         <el-row :gutter="20" class="ori-row">
           <el-col :span="12">
             <div class="grid-content">
-              <img src="/static/img/cp_03.jpg">
+              <img src="/static/img/pj_06.jpg">
             </div>
           </el-col>
           <el-col :span="12">
             <div class="ori-results">
-              <font>2</font>
+              <img src="/static/img/pj_06.jpg">
               <div class="numb-results"><p>识别结果｜弗拉基米尔·弗拉基米罗维奇·普京</p></div>
             </div>
          </el-col>
@@ -69,8 +69,6 @@
         <el-row>
           <el-col>
             <el-button type="primary">生成对抗图片</el-button>
-          </el-col>
-          <el-col>
             <el-button type="primary">预测攻击效果</el-button>
           </el-col>
         </el-row>
@@ -96,7 +94,7 @@
           </el-col>
           <el-col :span="12">
             <div class="ori-results">
-              <font>2</font>
+              <img src="/static/img/pj_06.jpg">
               <div class="numb-results"><p>识别结果｜弗拉基米尔·弗拉基米罗维奇·普京</p></div>
             </div>
          </el-col>
@@ -129,13 +127,14 @@ export default{
           border: 1px solid #666;
           height: 438px;
           line-height: 438px;
+          img{width: 100%;}
           font{ font-size: 250px;
                 color: #368be4;
                 text-align: center;
                 display: block;
               }
           .numb-results{
-            position: absolute;bottom: 0;left:0;background: #999;width: 100%;height: 60px;line-height: 60px;
+            position: absolute;bottom: 0;left:0;background: #2e419187;width: 100%;height: 60px;line-height: 60px;
             p{color: #fff;font-size: 20px;margin-left: 20px;}
           }
         }
@@ -152,9 +151,7 @@ export default{
               line-height: 32px;font-size: 18px;
             }
           }
-          .ori-results{
 
-          }
         }
         
       }

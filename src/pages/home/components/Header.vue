@@ -33,9 +33,9 @@
 
          <el-submenu index="5">
           <template slot="title">语音防攻</template>
-          <el-menu-item index="5-1">声纹识别</el-menu-item>
-          <el-menu-item index="5-2">语音识别1</el-menu-item>
-          <el-menu-item index="5-3">语音识别2</el-menu-item>
+          <el-menu-item index="voice_v">声纹识别</el-menu-item>
+          <el-menu-item index="voice_v1">语音识别1</el-menu-item>
+          <el-menu-item index="voice_v2">语音识别2</el-menu-item>
         </el-submenu>
         <el-menu-item index="about_us">关于我们</el-menu-item>
       </el-menu>
