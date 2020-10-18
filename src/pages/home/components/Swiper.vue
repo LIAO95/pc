@@ -3,13 +3,22 @@
   <div class="home">
     <swiper :options="swiperOption" ref="mySwiper">
 	    <swiper-slide v-for="item in banners" :key="item.id">
-	    	<img class="swiper-img" :src="item.imgurl">
-        <div class="swiper-content" :class="item.clssswipercontent">
-          <span class="swiper-content-text">
-             <h3 class="swiper-content-text-h3">{{item.title}}</h3>
-             <p class="swiper-content-text-p">{{item.text}}</p>
-             <a class="swiper-content-text-a" href="#">了解更多</a>
-          </span>
+	    	<!-- <img class="swiper-img" :src="item.imgurl"> -->
+<!--         <div :style="background: url('./static/img/banner01.jpg') center no-repeat;">
+ -->  
+ <!-- <div class="bg" :style="{backgroundImage: 'url(./static/img/banner01.jpg)'}">   -->
+        <div class="bg" :style="item.imgurl">        
+         
+            <div class="swiper-content " :class="item.clssswipercontent">
+
+            <span class="swiper-content-text animated swing">
+               <h3 class="swiper-content-text-h3">{{item.title}}</h3>
+               <p class="swiper-content-text-p">{{item.text}}</p>
+               <a class="swiper-content-text-a" href="#">了解更多</a>
+            </span>
+
+          </div>
+     
         </div>
 	    </swiper-slide>
 	    <div class="swiper-pagination" slot="pagination"></div>
@@ -39,37 +48,50 @@ export default {
       },
       banners:[{
       		id:'001',
-      		imgurl:'./static/img/banner01.jpg',
+      		imgurl:{
+            backgroundImage: 'url(./static/img/banner01.jpg)'
+          },
           clssswipercontent:'content1',
           title:'安全稳定企业服务',
           text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'002',
-      		imgurl:'./static/img/banner02.jpg',
+      		imgurl:{
+            backgroundImage: 'url(./static/img/banner02.jpg)'
+          },
           clssswipercontent:'content2',
           title:'视频防攻',
           text:'安全保障安全保障安全保障，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'003',
-      		imgurl:'./static/img/banner03.jpg',
+      		imgurl:{
+            backgroundImage: 'url(./static/img/banner03.jpg)'
+          },
           clssswipercontent:'content3',
           title:'图像防攻',
           text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'004',
-      		imgurl:'./static/img/banner04.jpg',
+      		imgurl:{
+            backgroundImage: 'url(./static/img/banner04.jpg)'
+          },
           clssswipercontent:'content4',
           title:'文本防攻',
           text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'005',
-      		imgurl:'./static/img/banner05.jpg',
+      		imgurl:{
+            backgroundImage: 'url(./static/img/banner05.jpg)'
+          },
           clssswipercontent:'content5',
           title:'语音防攻',
           text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	},{
       		id:'006',
-      		imgurl:'./static/img/banner06.jpg',
+          imgurl:{
+            backgroundImage: 'url(./static/img/banner06.jpg)'
+          },
+      		// imgurl:'./static/img/banner06.jpg',
           title:'教程',
           text:'10年服务经验积累，9种安全保障，八种服务场景，优质服务值得信赖！'
       	}]
@@ -89,7 +111,15 @@ export default {
 </script>
 
 <style lang="scss" >
+
+
 .swiper-container{
+     .bg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
     .swiper-pagination{
       .swiper-pagination-bullet{
          width: 3px;
@@ -115,8 +145,8 @@ export default {
         color: #fff;
         font-size: 14px;
         .swiper-content-text-h3{font-size: 30px;font-weight: bold;}
-        .swiper-content-text-p{padding: 20px 0px;line-height: 20px;}
-        .swiper-content-text-a{background: #fff;width: 40px;padding: 10px 15px;border-radius: 10px;}
+        .swiper-content-text-p{line-height: 24px;margin-top: 25px;margin-bottom: 40px}
+        .swiper-content-text-a{ background: #0d86ec;padding: 12px 45px;border-radius: 8px;}
       }
    }
    .swiper-content.content2,.swiper-content.content3,.swiper-content.content4,.swiper-content.content5{

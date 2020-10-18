@@ -8,30 +8,27 @@
        @select="handleSelect" 
        text-color="#fff" 
        active-text-color="#05f5a9"
+       router
        >
         <el-menu-item index="1">首页</el-menu-item>
         <el-submenu index="2">
-          <template slot="title">图像防攻</template>
+          <template slot="title"><router-link to="/tupian">图像防攻</router-link></template>
           <el-menu-item index="2-1">车牌识别</el-menu-item>
           <el-menu-item index="2-2">目标检测</el-menu-item>
           <el-menu-item index="2-3">人脸识别</el-menu-item>
           <el-menu-item index="2-4">手写数字</el-menu-item>
-
-  
         </el-submenu>
 
         <el-submenu index="3">
           <template slot="title">视频防攻</template>
           <el-menu-item index="3-1">短视频人物换脸</el-menu-item>
           <el-menu-item index="3-2">短视频异常物体检测</el-menu-item>
-
         </el-submenu>
 
         <el-submenu index="4">
           <template slot="title">文本防攻</template>
           <el-menu-item index="4-1">垃圾邮箱</el-menu-item>
           <el-menu-item index="4-2">情感识别</el-menu-item>
-
         </el-submenu>
 
          <el-submenu index="5">
@@ -40,7 +37,7 @@
           <el-menu-item index="5-2">语音识别1</el-menu-item>
           <el-menu-item index="5-3">语音识别2</el-menu-item>
         </el-submenu>
-        <el-menu-item index="6">关于我们</el-menu-item>
+        <el-menu-item index="aboutus">关于我们</el-menu-item>
       </el-menu>
   </el-container>
   </div>
@@ -74,16 +71,10 @@
     .el-menu-all{
       margin: 0 auto;
       background: none;
-
        .el-submenu >>> .el-submenu__title{
-        padding:0 45px;
-        
-
+        padding:0 45px;        
        }
-
-    }
-
-    
+    }    
     .el-menu.el-menu--horizontal{border:none;}
     .el-menu.el-menu--horizontal>>>.el-submenu{position: relative;}
     .el-menu.el-menu--horizontal>>>.el-submenu .el-submenu__title:after {
@@ -96,10 +87,8 @@
         background: #ffffff;
         transition: all .6s ease;
     }
-
     .el-menu.el-menu--horizontal>>>.el-submenu .el-submenu__title:hover{
        background: none;
-
     }
      .el-menu.el-menu--horizontal>>>.el-submenu:hover .el-submenu__title:after{
        width: 100%;
